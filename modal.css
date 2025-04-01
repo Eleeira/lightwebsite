@@ -1,0 +1,86 @@
+.modal-content {
+    
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    margin: 0 auto;
+    max-height: fit-content;
+    font-family: 'Ysabeau SC', sans-serif;
+
+
+        
+        padding: 10px;
+        border-radius: 10px;
+
+}
+
+
+.modal-body {
+  background-color: rgb(198, 185, 219);
+  margin-top: 10px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+
+
+.modal-content:before, .modal-content::after {
+    border-radius: 10px;
+    content: '';
+    position: absolute;
+    left: -2px;
+    top: -2px;
+    background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00,#ffff00, #ff0000, #fb0094, 
+      #0000ff, #00ff00,#ffff00, #ff0000);
+    background-size: 400%;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    z-index: -1;
+    animation: steam 30s linear infinite;
+  }
+  
+  @keyframes steam {
+    0% {
+      background-position: 0 0;
+    }
+    50% {
+      background-position: 400% 0;
+    }
+    100% {
+      background-position: 0 0;
+    }
+  }
+
+
+
+
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @-moz-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @-o-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @-ms-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+
+
